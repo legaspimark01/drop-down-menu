@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <title>Drop Down Menu</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background-image: url("https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg");
+            margin-left: 250px;
+            margin-top: 20px;
+            color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #container ul {
+            list-style: none;
+        }
+        #container ul li {
+            background-color: #ff3ea5ff;
+            width: 150px;
+            border: 4px solid #00a4ccff;
+            border-radius: 26px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            float: left;
+            color: whie;
+            font-size: 19px;
+            position: relative;
+
+        }
+
+        #container ul li:hover{
+            background-color: #edff00ff;
+        }
+
+        #container ul ul {
+            display: none;
+        }
+        #container ul li:hover > ul {
+            display: block;
+        }
+
+        #container ul ul ul {
+            margin-left: 150px;
+            top: 0px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div id="container">
+        
+        <ul>
+            <li>Home</li>
+            <li>Tutorials
+                <ul>
+                    <li>Photoshop</li>
+                    <li>illustrator</li>
+                    <li>Web Design
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Articles</li>
+            <li>Inspiration</li>
+        </ul>
+    </div>
+</body>
+</html>

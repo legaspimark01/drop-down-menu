@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        
+     <link rel="stylesheet" href="nav2css.css">
+     <style>
+       body {
+           margin: 0;
+           padding: 0;
+          background: #faa98b;
+           background-position: center;
+  background-repeat: no-repeat;
+
+ 
+
+       }
+
+       .container {
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translateX(-50%) translateY(-50%);
+       }
+
+       li {
+           display: inline-block;
+       }
+
+       li a {
+           text-decoration: none;
+           display: inline-block;
+           color: black;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           font-weight: lighter;
+           font-size: 28px;
+           padding: 0 20px;
+           
+       }
+
+       .cool-link::after {
+           content: '';
+           display: block;
+           width: 0;
+           height: 2px;
+           background: black;
+           transition: width .3s;
+       }
+
+       .cool-link:hover::after {
+           width: 100%;
+           transition: width .3s;
+       }
+     
+     </style>
+   
+</head>
+<body>
+<div class="container">
+
+  
+        <li><a href="#" class="cool-link">HOME</a></li>
+        <li><a href="#" class="cool-link">PRODUCTS</a></li>
+        <li><a href="#" class="cool-link">COMPANY</a></li>
+        <li><a href="#" class="cool-link">CONTACT</a></li>
+</div>
+    </body>
+</html>

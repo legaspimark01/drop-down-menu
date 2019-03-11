@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+    <title>Drop Down Menu</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background-color: #74a0e8;
+            margin-left: 250px;
+            margin-top: 20px;
+            color: white;
+           
+        }
+        #container ul {
+            list-style: none;
+        }
+        #container ul li {
+            background-color: #ccaaee;
+            width: 150px;
+           font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            float: botttom;
+            color: whie;
+            font-size: 19px;
+            position: relative;
+            border: 1px solid white;
+   
+
+        }
+
+        #container ul li:hover{
+            background-color: #ffaacc;
+        }
+
+        #container ul ul {
+            display: none;
+        }
+        #container ul li:hover > ul {
+            display: block;
+        }
+
+        #container ul ul ul {
+            margin-left: 170px;
+            top: 0px;
+            position: absolute;
+        }
+        .tut {
+            position: relative;
+            left: 160px;
+            bottom: 50px;
+           
+        }
+        ul ul li:before {
+
+content: "\2192 \0020";
+}
+ul ul {
+list-style: none;
+}
+
+    </style>
+</head>
+<body>
+
+
+    <div id="container">
+        
+        <ul>
+            <li>HOME</li>
+            <li>PRODUCTS
+                <ul>
+                    <li class="tut">PRODUCT 1
+                        <ul>
+                            <li class="subprod">SUB PRODUCT</li>
+                            <li class="subprod">SUB PRODUCT</li>
+                        </ul>
+                    </li>
+                    <li class="tut">PRODUCT 2</li>
+                </ul>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+        </ul>
+    </div>
+</body>
+</html>
